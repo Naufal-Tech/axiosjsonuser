@@ -14,6 +14,7 @@ function Footer() {
                     <Col className='col col-lg-4 col-md-12 col-12'>
                         <img className='text-lg-start text-md-center text-center mb-lg-0 mb-md-5 mb-2 main-title' src={solubislogo} alt="logosolubis" />
                     </Col>
+
                     <Col className='col col-lg-2 col-md-3 col-12'>
                         <ul>
                             <li className='list-unstyled'>
@@ -30,6 +31,7 @@ function Footer() {
                             </li>
                         </ul>
                     </Col>
+
                     <Col className='col col-lg-2 col-md-3 col-12'>
                         <ul>
                             <li className='list-unstyled'>
@@ -46,6 +48,9 @@ function Footer() {
                             </li>
                         </ul>
                     </Col>
+
+
+                    {/* -------------------------------CONTACT---------------------------------- */}
                     <Col className='col col-lg-3 col-md-6 col-12'>
                         <ul>
                             <li className='list-unstyled'>
@@ -69,6 +74,8 @@ function Footer() {
                         </ul>
                     </Col>
                 </Row>
+
+                {/* -------------------------------COPYRIGHT---------------------------------- */}
                 <Row className='justify-content-lg-between justify-content-md-center justify-content-center mt-5 bott-foot'>
                     <Col className='col-lg-4 col-md-12 col-12 text-lg-start text-md-center text-center'>
                         <p className='copy'>Copyright 2022. All rights reserved</p>

@@ -26,7 +26,7 @@ function App() {
   };
 
   const renderHeader = () => {
-    let headerElement = ["id", "name", "username", "Email", "Phone"];
+    let headerElement = ["Id", "Name", "Username", "Email", "Phone"];
     return headerElement.map((key, index) => {
       return <th key={index}>{key.toUpperCase()}</th>;
     });
