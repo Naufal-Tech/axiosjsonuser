@@ -4,8 +4,7 @@ import axios from "axios";
 
 const URL = "https://jsonplaceholder.typicode.com/users";
 
-function App() {
-
+function App(show) {
   const [data, setData] = useState([]);
   const [nameField, setNamefield] = useState("");
   const [emailField, setEmailfield] = useState("");
@@ -14,6 +13,8 @@ function App() {
     const response = await axios.get(URL);
     setData(response.data);
   };
+
+
   useEffect(() => {
     getData();
   }, [data]);
@@ -38,18 +39,22 @@ function App() {
         ? d.name.toLowerCase().includes(nameField.toLowerCase())
         : d.email.toLowerCase().includes(emailField.toLowerCase());
     });
+
+
     return (
       <>
         {
-          filteredData.map(({ id, name, username, email, phone }) => {
+          filteredData.map(({ id, name, username, email, phone, address }) => {
             return (
-              <tr key={id}>
-                <td>{id}</td>
-                <td>{name}</td>
-                <td>{username}</td>
-                <td>{email}</td>
-                <td>{phone}</td>
-              </tr>
+              <>
+                <tr key={id}>
+                  <td>{id}</td>
+                  <td>{name}</td>
+                  <td>{username}</td>
+                  <td>{email}</td>
+                  <td>{phone}</td>
+                </tr>
+              </>
             );
           })
         }

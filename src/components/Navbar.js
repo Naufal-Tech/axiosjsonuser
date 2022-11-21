@@ -2,8 +2,8 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { useContext } from "react";
-import { AppContext } from "./context";
-import LogoSolubis from '../images/solubis_logo.svg'
+import { AppContext } from "./Context";
+import LogoSolubis from '../assets/images/solubis_logo.svg'
 
 const Navbar = () => {
   const [isNavDisplay, setIsNavDisplay] = useState(false);

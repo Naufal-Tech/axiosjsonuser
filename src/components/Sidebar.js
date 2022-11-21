@@ -1,7 +1,8 @@
 import { useContext } from "react";
-import { FaSearch, FaRegUser, FaRegBell, FaInbox } from "react-icons/fa";
-import { FiGrid, FiX } from "react-icons/fi";
-import { AppContext } from "./context";
+import { FaSearch, FaHome, FaBusinessTime, FaBlog } from "react-icons/fa";
+import { BsInfoCircle } from "react-icons/bs";
+import { FiX } from "react-icons/fi";
+import { AppContext } from "./Context";
 
 const Sidebar = () => {
   const data = useContext(AppContext);
@@ -24,22 +25,22 @@ const Sidebar = () => {
           </li>
           <li>
             <a href="/">
-              <FaRegUser /> Profile
+              <FaHome /> Home
             </a>
           </li>
           <li>
             <a href="/">
-              <FaRegBell /> Notifications
+              <FaBusinessTime /> Business Insights
             </a>
           </li>
           <li>
             <a href="/">
-              <FaInbox /> Inbox
+              <FaBlog /> Blog
             </a>
           </li>
           <li>
             <a href="/">
-              <FiGrid /> Preferences
+              <BsInfoCircle /> Preferences
             </a>
           </li>
         </ul>

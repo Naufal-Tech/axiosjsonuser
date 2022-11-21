@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
 import Iframe from 'react-iframe'
 import './Footer.css';
-import solubislogo from '../../images/solubis_logo.svg'
+import solubislogo from '../../assets/images/solubis_logo.svg'
 
 
 function Footer() {
